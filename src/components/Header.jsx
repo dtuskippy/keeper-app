@@ -1,11 +1,11 @@
 import React from "react";
-import "./styles.css";
+
 
 function Header() {
   return (
-    <div>
+    <header>
       <h1>Gizmo Rocks!</h1>
-    </div>
+    </header>
   );
 }
 

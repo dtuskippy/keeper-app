@@ -1,10 +1,10 @@
 import React from "react";
-import "./styles.css";
+
 
 function Note() {
 
   return (
-    <div>
+    <div className="note">
       <h1>Markus</h1>
       <p>Gizmo</p>
     </div>
