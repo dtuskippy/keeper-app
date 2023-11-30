@@ -2,7 +2,7 @@ import React from "react";
 
 
 function Footer() {
-  let year = new Date().getFullYear();
+  const year = new Date().getFullYear();
   return (
     <footer>
       <p>&copy; Gizmo Rodriguo {year}</p>
@@ -13,3 +13,5 @@ function Footer() {
 
 
 export default Footer;
+
+
