@@ -10,6 +10,13 @@ function App() {
     <div>
       <Header />
       <CreateArea />
+      {/* {notes.map(noteItem => (
+        <Note
+          key={noteItem.key}
+          title={noteItem.title}
+          content={noteItem.content}
+        />
+      ))} */}
       <Note key={1} title="Note title" content="Note content" />
       <Footer />  
     </div>

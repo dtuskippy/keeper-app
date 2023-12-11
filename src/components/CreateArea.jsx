@@ -1,12 +1,34 @@
-import React from "react";
+import React, { useState }from "react";
 
 function CreateArea() {
+
+  const [inputText, setInputText] = useState("");
+  
+  // const [textArea, setTextArea] = useState("");
+  const [notes, setNotes] = useState([]);
+
+  function handleChange(event) {
+    const newValue = event.target.value;
+    setInputText(newValue);
+    console.log("inputText: ", inputText);
+  }
+
+  function addItem() {
+    setNotes(prevNotes => {
+      return [...prevNotes, inputText];
+    });
+  
+    setInputText("");
+    // event.preventDefault();
+    
+  }
+
   return (
     <div>
       <form>
-        <input name="title" placeholder="Title" />
+        <input onChange={handleChange} name={inputText} placeholder="Title" value={inputText}/>
         <textarea name="content" placeholder="Take a note..." rows="3" />
-        <button>Add</button>
+        <button onClick={addItem}>Add</button>
       </form>
     </div>
   );
