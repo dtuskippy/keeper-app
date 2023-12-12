@@ -3,8 +3,6 @@ import React, { useState }from "react";
 function CreateArea() {
 
   const [inputText, setInputText] = useState("");
-  
-  // const [textArea, setTextArea] = useState("");
   const [notes, setNotes] = useState([]);
 
   function handleChange(event) {
@@ -13,13 +11,13 @@ function CreateArea() {
     console.log("inputText: ", inputText);
   }
 
-  function addItem() {
+  function addItem(event) {
     setNotes(prevNotes => {
       return [...prevNotes, inputText];
     });
   
     setInputText("");
-    // event.preventDefault();
+    event.preventDefault();
     
   }
 
