@@ -7,7 +7,9 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background: #eee;
+  background: white;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png"); 
+  /* just clicked on the image from site we liked, and to left you can grab the css */
   padding: 0 16px;
 }
 

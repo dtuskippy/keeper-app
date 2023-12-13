@@ -1,10 +1,11 @@
 import React from "react";
+import HighlightIcon from '@mui/icons-material/Highlight';
 
 
 function Header() {
   return (
     <header>
-      <h1>Gizmo Rocks!</h1>
+      <h1> <HighlightIcon /> Gizmo Rocks!</h1> 
     </header>
   );
 }
